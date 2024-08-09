@@ -1,37 +1,42 @@
-'number' + 3 + 3
+/* var result = 'number' + 3 + 3;
+console.log(result); // number33  - конкатенація в якій відбулось склеєння двох частин */
 
-null + 3
+/* var result = null + 3;
+console.log(result);  //  3 - бо null = false = 0, a 0+3 = 3 */
 
-5 && "qwerty"
+/* 5 && "qwerty"; //  comment */
 
-+'40' + +'2' + "hillel";
+/*  var result = +'40' + +'2' + "hillel";
+console.log(result); //  42 hillel -  спочатку відбулась дія додавання , потім конкатенація */
 
-'10' - 5 === 6;
+/* console.log ('10' - 5 === 6); // false, бо 5 < 6  */
 
-true + false
+/* true + false; // 1, бо true = 1, false = 0 */
 
-'4px' - 3
+/* '4px' - 3; //  comment */
 
-'4' - 3
+/* var result = '4' - 3;
+console.log(result); //  1, бо відбувається звичайне віднімання */
 
-'6' + 3 ** 0;
+/* '6' + 3 ** 0; //  comment */
 
-12 / '6'
+/* var result = 12 / '6';
+console.log(result); // 2,  бо відбувається звичайне ділення */
 
-'10' + (5 === 6);
+/* '10' + (5 === 6); //  comment */
 
-null == ''
+/* console.log (null == ''); // false, бо null може = тільки "undefined" і ні чому іншому, а "" = завжди false, отже вони нерівні */
 
-3 ** (9 / 3);
+/* 3 ** (9 / 3); //  comment */
 
-!!'false' == !!'true'
+/*!!'false' == !!'true'; //  comment */
 
-0 || '0' && 1
+/* 0 || '0' && 1; //  comment */
 
-(+null == false) < 1;
+/* (+null == false) < 1; //  comment */
 
-false && true || true
+/* false && true || true; //  comment */
 
-false && (false || true);
+/* false && (false || true); //  comment */
 
-(+null == false) < 1 ** 5;
+/* (+null == false) < 1 ** 5; //  comment */
