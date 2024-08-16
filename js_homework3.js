@@ -13,3 +13,12 @@ for (let x = 4; x <= 4; x ++) {
     console.log ('result = ' + (x * x * x));
 }
 // варіант 2
+
+function pow (x,y) {
+    return x * x * x;
+}
+const result = pow (4,3);
+
+console.log(result);
+
+// варіант 3 
