@@ -22,3 +22,15 @@ const result = pow (4,3);
 console.log(result);
 
 // варіант 3 
+
+function pow(x, y) {
+    let result = 1;
+    for (let i = 0; i < y; i++) {
+        result *= x;
+    }
+    return result;
+}
+const result = pow(4, 3);
+console.log(result);
+
+// варіант 4 (the last one, i hope)
