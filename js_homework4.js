@@ -1,22 +1,22 @@
-function random (min,max) {
-    return min + Math.random() * (max - min + 1);
-}
-console.log (random (100, 1000));
-
-
-function random (min,max, count) {
-    for (let i = 0; i < count; i++) {
-    return min + Math.random() * (max - min + 1);
-}
-console.log (random (100, 1000));
-
-
 function random(min, max, count) {
+    let  pair = 0; 
+    let  notpair= 0;  
     for (let i = 0; i < count; i++) {
-        let random = Math.floor(min + Math.random() * (max - min + 1));
+        let randomNum = Math.floor(min + Math.random() * (max - min + 1));
+        console.log(randomNum); 
+        if (randomNum % 2 === 0) {
+            pair++;
+        } else {
+            notpair++;
+        }
     }
 
-    return min + Math.random () * (max - min + 1);
+    let pairPercentage = (pair / count) * 100;
+    let notpairPercentage = (notpair / count) * 100;
+
+console.log ('Парних чисел: ' + pair + '(' + pairPercentage + '%)');
+console.log ('Непарних чисел: ' + notpair + "(" + notpairPercentage + '%)');
+console.log('Всього чисел: ' + count);
 }
 
-console.log(random(100, 1000, 5)); 
+random(100, 1000, 5);
